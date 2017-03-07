@@ -70,9 +70,8 @@
             });
 
             if (option.children.length > 0) {
-                $childul = $('<ul></ul>').appendTo($li);
-
                 $(option.children).each(function (i, child) {
+                    $childul = $('<ul></ul>').appendTo($li);
                     $childul.append(createListItem(child));
                 });
             }
